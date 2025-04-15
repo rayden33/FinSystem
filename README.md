@@ -55,7 +55,7 @@
 
 1. Клонируй репозиторий:
 ```bash
-git clone https://github.com/your-username/fin-system.git
+git clone https://github.com/rayden33/FinSystem.git
 ```
 
 2. Построй контейнеры:
@@ -83,7 +83,7 @@ http://localhost:5000/swagger
 
 ## 📌 Статус
 
-🔧 В активной разработке — задачи ведутся через [GitHub Projects](https://github.com/YOUR_USERNAME/fin-system/projects)
+🔧 В активной разработке — задачи ведутся через [GitHub Projects](https://github.com/rayden33/FinSystem/projects)
 
 ---
 
