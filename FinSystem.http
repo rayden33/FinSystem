@@ -1,0 +1,6 @@
+@FinSystem_HostAddress = http://localhost:5208
+
+GET {{FinSystem_HostAddress}}/api/Health/ping/
+Accept: application/json
+
+###
