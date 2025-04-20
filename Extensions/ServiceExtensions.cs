@@ -6,7 +6,11 @@
         {
             services.AddControllers();
             services.AddEndpointsApiExplorer();         // Need for analyse endpoints
-            services.AddSwaggerGen();                   // Genarates Swagger JSON and UI
+            services.AddSwaggerGen(options =>
+            {
+                var xmlFIleName = $"{typeof(ServiceExtensions).Assembly.GetName().Name}.xml";
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFIleName));
+            });                   // Genarates Swagger JSON and UI
             services.AddCors(options =>
             {
                 options.AddPolicy("Frontend", policy =>

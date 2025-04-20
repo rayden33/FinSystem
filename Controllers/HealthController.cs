@@ -2,14 +2,13 @@
 
 namespace FinSystem.Controllers;
 
-
-[ApiController]
-[Route("api/[controller]")]
-public class HealthController : ControllerBase
+public class HealthController(ILogger<HealthController> logger) : BaseController
 {
     [HttpGet("ping")]
     public IActionResult Ping()
     {
+        logger.LogInformation("Health check");
+        
         return Ok("pong");
     }
 }
